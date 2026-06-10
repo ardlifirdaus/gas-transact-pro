@@ -27,6 +27,12 @@ export const metadata: Metadata = {
     "multi gudang LPG",
     "UMKM gas",
   ],
+  icons: {
+    icon: [
+      { url: "/icon.png", type: "image/png" },
+    ],
+    apple: "/icon.png",
+  },
   openGraph: {
     title: "GasTransact Pro — Sistem Transaksi LPG Multi Gudang",
     description:

@@ -128,7 +128,7 @@ export default function HeroSection() {
                 </div>
               </div>
               <Image
-                src="/dashboard.png"
+                src="/dashboard2.png"
                 alt="GasTransact Pro Dashboard"
                 width={800}
                 height={500}
@@ -144,7 +144,7 @@ export default function HeroSection() {
               </div>
               <div>
                 <p className="text-xs text-muted leading-none mb-1">Margin Kotor</p>
-                <p className="text-white font-bold text-sm">Rp 47.929.000</p>
+                <p className="text-white font-bold text-sm">Rp 53.859.000</p>
               </div>
             </div>
 
@@ -154,7 +154,7 @@ export default function HeroSection() {
               </div>
               <div>
                 <p className="text-xs text-muted leading-none mb-1">Volume Penjualan</p>
-                <p className="text-white font-bold text-sm">20.152 Tabung</p>
+                <p className="text-white font-bold text-sm">20.257 Tabung</p>
               </div>
             </div>
 

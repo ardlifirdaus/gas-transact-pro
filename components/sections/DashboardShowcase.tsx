@@ -5,9 +5,9 @@ import Image from "next/image";
 import { Package, TrendingUp, BarChart2, RefreshCw } from "lucide-react";
 
 const stats = [
-  { icon: Package, label: "Total Stok Tabung", value: "278 Unit" },
-  { icon: TrendingUp, label: "Total Margin Kotor", value: "Rp 47,9 Jt" },
-  { icon: BarChart2, label: "Volume Penjualan", value: "20.152 Tabung" },
+  { icon: Package, label: "Total Stok Tabung", value: "300 Unit" },
+  { icon: TrendingUp, label: "Total Margin Kotor", value: "Rp 53,9 Jt" },
+  { icon: BarChart2, label: "Volume Penjualan", value: "20.257 Tabung" },
   { icon: RefreshCw, label: "Google Sheets Sync", value: "Aktif" },
 ];
 
@@ -119,7 +119,7 @@ export default function DashboardShowcase() {
             </div>
 
             <Image
-              src="/dashboard.png"
+              src="/dashboard2.png"
               alt="GasTransact Pro — Overview Kinerja Dashboard"
               width={1280}
               height={720}

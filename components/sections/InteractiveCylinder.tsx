@@ -3,8 +3,8 @@
 import { useEffect, useRef } from "react";
 
 const stockItems = [
-  { label: "Tabung Isi", value: "187 Unit", color: "bg-primary", pct: 52 },
-  { label: "Tabung Kosong", value: "171 Unit", color: "bg-amber-400", pct: 47 },
+  { label: "Tabung Isi", value: "129 Unit", color: "bg-primary", pct: 43 },
+  { label: "Tabung Kosong", value: "171 Unit", color: "bg-amber-400", pct: 57 },
   { label: "Tabung Bocor", value: "0 Unit", color: "bg-red-500", pct: 0 },
 ];
 
@@ -181,7 +181,7 @@ export default function InteractiveCylinder() {
             {/* Total badge */}
             <div className="flex items-center gap-3 bg-dark border border-brand-border rounded-xl px-5 py-3">
               <span className="text-muted text-sm">Total Stok Konstruksi:</span>
-              <span className="text-white font-bold">278 Unit</span>
+              <span className="text-white font-bold">300 Unit</span>
             </div>
           </div>
 
