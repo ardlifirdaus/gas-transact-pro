@@ -31,7 +31,7 @@ export default function InteractiveCylinder() {
         }) as unknown as { kill: () => void };
 
         gsap.from(".cylinder-section-left", {
-          scrollTrigger: { trigger: ".cylinder-section", start: "top 80%" },
+          scrollTrigger: { trigger: ".cylinder-section", start: "top 80%", once: true },
           x: -40,
           opacity: 0,
           duration: 1,
@@ -39,7 +39,7 @@ export default function InteractiveCylinder() {
         });
 
         gsap.from(".cylinder-section-right", {
-          scrollTrigger: { trigger: ".cylinder-section", start: "top 80%" },
+          scrollTrigger: { trigger: ".cylinder-section", start: "top 80%", once: true },
           x: 40,
           opacity: 0,
           duration: 1,
@@ -48,7 +48,7 @@ export default function InteractiveCylinder() {
         });
 
         gsap.from(".stock-row", {
-          scrollTrigger: { trigger: ".cylinder-section", start: "top 75%" },
+          scrollTrigger: { trigger: ".cylinder-section", start: "top 75%", once: true },
           y: 20,
           opacity: 0,
           stagger: 0.12,
@@ -57,6 +57,8 @@ export default function InteractiveCylinder() {
           delay: 0.35,
         });
       }, containerRef);
+
+      ScrollTrigger.refresh();
     };
 
     init();

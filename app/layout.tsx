@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins, Inter } from "next/font/google";
 import "./globals.css";
+import GSAPRefresh from "@/components/GSAPRefresh";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -50,6 +51,7 @@ export default function RootLayout({
   return (
     <html lang="id" className={`${poppins.variable} ${inter.variable}`}>
       <body className="bg-dark text-white font-body antialiased overflow-x-hidden">
+        <GSAPRefresh />
         {children}
       </body>
     </html>

@@ -72,7 +72,7 @@ export default function FeaturesSection() {
 
       ctx = gsap.context(() => {
         gsap.from(".features-header", {
-          scrollTrigger: { trigger: ".feature-grid", start: "top 82%" },
+          scrollTrigger: { trigger: ".feature-grid", start: "top 82%", once: true },
           y: 30,
           opacity: 0,
           duration: 0.8,
@@ -80,7 +80,7 @@ export default function FeaturesSection() {
         });
 
         gsap.from(".feature-card", {
-          scrollTrigger: { trigger: ".feature-grid", start: "top 80%" },
+          scrollTrigger: { trigger: ".feature-grid", start: "top 80%", once: true },
           y: 40,
           opacity: 0,
           stagger: 0.12,
@@ -89,6 +89,8 @@ export default function FeaturesSection() {
           delay: 0.15,
         });
       }, containerRef);
+
+      ScrollTrigger.refresh();
     };
 
     init();

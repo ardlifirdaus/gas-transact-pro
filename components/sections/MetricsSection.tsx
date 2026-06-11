@@ -54,6 +54,7 @@ export default function MetricsSection() {
           scrollTrigger: {
             trigger: ".metrics-row",
             start: "top 85%",
+            once: true,
           },
           y: 20,
           opacity: 0,
@@ -74,6 +75,7 @@ export default function MetricsSection() {
             scrollTrigger: {
               trigger: ".metrics-row",
               start: "top 85%",
+              once: true,
             },
             onUpdate() {
               el.textContent = `${m.prefix ?? ""}${Math.round(obj.val)}${m.suffix}`;
@@ -81,6 +83,8 @@ export default function MetricsSection() {
           });
         });
       }, containerRef);
+
+      ScrollTrigger.refresh();
     };
 
     init();

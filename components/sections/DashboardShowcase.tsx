@@ -24,7 +24,7 @@ export default function DashboardShowcase() {
 
       ctx = gsap.context(() => {
         gsap.from(".ds-header", {
-          scrollTrigger: { trigger: ".ds-section", start: "top 82%" },
+          scrollTrigger: { trigger: ".ds-section", start: "top 82%", once: true },
           y: 30,
           opacity: 0,
           duration: 0.8,
@@ -32,7 +32,7 @@ export default function DashboardShowcase() {
         });
 
         gsap.from(".ds-stat", {
-          scrollTrigger: { trigger: ".ds-section", start: "top 80%" },
+          scrollTrigger: { trigger: ".ds-section", start: "top 80%", once: true },
           y: 20,
           opacity: 0,
           stagger: 0.1,
@@ -42,7 +42,7 @@ export default function DashboardShowcase() {
         });
 
         gsap.from(".ds-frame", {
-          scrollTrigger: { trigger: ".ds-section", start: "top 75%" },
+          scrollTrigger: { trigger: ".ds-section", start: "top 75%", once: true },
           y: 50,
           opacity: 0,
           duration: 1.1,
@@ -50,6 +50,8 @@ export default function DashboardShowcase() {
           delay: 0.25,
         });
       }, containerRef);
+
+      ScrollTrigger.refresh();
     };
 
     init();

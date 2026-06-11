@@ -49,7 +49,7 @@ export default function WhyChooseUs() {
 
       ctx = gsap.context(() => {
         gsap.from(".why-header", {
-          scrollTrigger: { trigger: ".why-section", start: "top 82%" },
+          scrollTrigger: { trigger: ".why-section", start: "top 82%", once: true },
           y: 30,
           opacity: 0,
           duration: 0.8,
@@ -57,7 +57,7 @@ export default function WhyChooseUs() {
         });
 
         gsap.from(".why-item", {
-          scrollTrigger: { trigger: ".why-section", start: "top 80%" },
+          scrollTrigger: { trigger: ".why-section", start: "top 80%", once: true },
           y: 30,
           opacity: 0,
           stagger: 0.1,
@@ -66,6 +66,8 @@ export default function WhyChooseUs() {
           delay: 0.2,
         });
       }, containerRef);
+
+      ScrollTrigger.refresh();
     };
 
     init();

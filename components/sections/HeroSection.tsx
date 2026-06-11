@@ -82,14 +82,14 @@ export default function HeroSection() {
                 href={DEMO_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-primary hover:bg-primary-dark text-white rounded-full font-bold transition-all shadow-lg hover:shadow-primary/25 text-base"
+                className="inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-primary hover:bg-primary-dark text-white rounded-full font-bold transition-all shadow-lg hover:shadow-primary/25 text-base w-full sm:w-auto"
               >
                 Coba Demo Sekarang
                 <ArrowRight className="w-4 h-4" />
               </a>
               <a
                 href="#fitur"
-                className="inline-flex items-center justify-center gap-2 px-7 py-3.5 border border-brand-border hover:border-primary/40 text-muted hover:text-white rounded-full font-semibold transition-all text-base"
+                className="inline-flex items-center justify-center gap-2 px-7 py-3.5 border border-brand-border hover:border-primary/40 text-muted hover:text-white rounded-full font-semibold transition-all text-base w-full sm:w-auto"
               >
                 Lihat Fitur
               </a>
@@ -108,8 +108,8 @@ export default function HeroSection() {
             </p>
           </div>
 
-          {/* Right: dashboard preview */}
-          <div className="hero-image relative">
+          {/* Right: dashboard preview — hidden on mobile, visible on lg+ */}
+          <div className="hero-image relative hidden lg:block">
             {/* Browser frame */}
             <div className="relative bg-secondary border border-brand-border rounded-2xl overflow-hidden shadow-2xl shadow-black/40">
               {/* Browser toolbar */}
