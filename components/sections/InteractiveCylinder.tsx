@@ -36,6 +36,7 @@ export default function InteractiveCylinder() {
           opacity: 0,
           duration: 1,
           ease: "power3.out",
+          immediateRender: false,
         });
 
         gsap.from(".cylinder-section-right", {
@@ -45,6 +46,7 @@ export default function InteractiveCylinder() {
           duration: 1,
           ease: "power3.out",
           delay: 0.15,
+          immediateRender: false,
         });
 
         gsap.from(".stock-row", {
@@ -55,6 +57,7 @@ export default function InteractiveCylinder() {
           duration: 0.7,
           ease: "power3.out",
           delay: 0.35,
+          immediateRender: false,
         });
       }, containerRef);
 

@@ -61,6 +61,7 @@ export default function MetricsSection() {
           duration: 0.7,
           stagger: 0.1,
           ease: "power3.out",
+          immediateRender: false,
         });
 
         const valueEls = document.querySelectorAll<HTMLElement>(".metric-value-js");

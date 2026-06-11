@@ -29,6 +29,7 @@ export default function DashboardShowcase() {
           opacity: 0,
           duration: 0.8,
           ease: "power3.out",
+          immediateRender: false,
         });
 
         gsap.from(".ds-stat", {
@@ -39,6 +40,7 @@ export default function DashboardShowcase() {
           duration: 0.7,
           ease: "power3.out",
           delay: 0.1,
+          immediateRender: false,
         });
 
         gsap.from(".ds-frame", {
@@ -48,6 +50,7 @@ export default function DashboardShowcase() {
           duration: 1.1,
           ease: "power3.out",
           delay: 0.25,
+          immediateRender: false,
         });
       }, containerRef);
 

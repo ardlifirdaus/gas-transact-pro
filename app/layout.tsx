@@ -30,9 +30,10 @@ export const metadata: Metadata = {
   ],
   icons: {
     icon: [
+      { url: "/icon.svg", type: "image/svg+xml" },
       { url: "/icon.png", type: "image/png" },
     ],
-    apple: "/icon.png",
+    apple: "/icon.svg",
   },
   openGraph: {
     title: "GasTransact Pro — Sistem Transaksi LPG Multi Gudang",

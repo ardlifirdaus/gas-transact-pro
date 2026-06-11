@@ -54,6 +54,7 @@ export default function WhyChooseUs() {
           opacity: 0,
           duration: 0.8,
           ease: "power3.out",
+          immediateRender: false,
         });
 
         gsap.from(".why-item", {
@@ -64,6 +65,7 @@ export default function WhyChooseUs() {
           duration: 0.8,
           ease: "power3.out",
           delay: 0.2,
+          immediateRender: false,
         });
       }, containerRef);
 
