@@ -7,6 +7,7 @@ import InteractiveCylinder from "@/components/sections/InteractiveCylinder";
 import DashboardShowcase from "@/components/sections/DashboardShowcase";
 import WhyChooseUs from "@/components/sections/WhyChooseUs";
 import CTASection from "@/components/sections/CTASection";
+import FAQChatWidget from "@/components/ui/FAQChatWidget";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <WhyChooseUs />
       <CTASection />
       <Footer />
+      <FAQChatWidget />
     </main>
   );
 }
